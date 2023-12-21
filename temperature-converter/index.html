@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature convertor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Temperature Converter</h1>
+    <div class="temp-container">
+      <label for="celsius">Celsius:</label>
+      <input onchange="calculateTemp(event)" type="number" name="celsius" id="celsius" placeholder="Enter temperature" class="input">
+    </div>
+    <div class="temp-container">
+      <label for="fahrenheit">Fahrenheit:</label>
+      <input onchange="calculateTemp(event)" type="number" name="fahrenheit" id="fahrenheit" placeholder="Enter temperature" class="input">
+    </div>
+    <div class="temp-container">
+      <label for="kelvin">Kelvin:</label>
+      <input onchange="calculateTemp(event)" type="number" name="kelvin" id="kelvin" placeholder="Enter temperature" class="input">
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2023-2024 Victor Ccanchi Vasquez</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
