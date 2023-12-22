@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback UI</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<div id="translator" class="translator"></div>
-<body>
-  <div class="container" id="container">
-    <h1 class="heading">Feedback UI</h1>
-    <div class="ratings-container" id="ratings-container">
-      <div class="rating">
-        <img src="https://www.svgrepo.com/show/209082/vain-emoji.svg">
-        <small>Unhappy</small>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <div id="translator" class="translator"></div>
+  <body>
+    <div class="container" id="container">
+      <h1 class="heading">Feedback UI</h1>
+      <div class="ratings-container" id="ratings-container">
+        <div class="rating">
+          <img src="https://www.svgrepo.com/show/209082/vain-emoji.svg" />
+          <small>Unhappy</small>
+        </div>
+        <div class="rating">
+          <img src="https://www.svgrepo.com/show/209071/confused-emoji.svg" />
+          <small>Neutral</small>
+        </div>
+        <div class="rating">
+          <img src="https://www.svgrepo.com/show/209063/happy-emoji.svg" />
+          <small>Satisfied</small>
+        </div>
       </div>
-      <div class="rating">
-        <img src="https://www.svgrepo.com/show/209071/confused-emoji.svg">
-        <small>Neutral</small>
-      </div>
-      <div class="rating">
-        <img src="https://www.svgrepo.com/show/209063/happy-emoji.svg">
-        <small>Satisfied</small>
-      </div>
+      <button class="btn" id="btn">Send Review</button>
     </div>
-    <button class="btn" id="btn">Send Review</button>
-  </div>
-  <script src="script.js"></script>
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'translator');
-    }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</body>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "es,en",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "translator"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </body>
 </html>

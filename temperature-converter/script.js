@@ -1,12 +1,9 @@
-const celsiusEl = document.getElementById('celsius');
-const fahrenheitEl = document.getElementById('fahrenheit');
-const kelvinEl = document.getElementById('kelvin');
-
-
-
+const celsiusEl = document.getElementById("celsius");
+const fahrenheitEl = document.getElementById("fahrenheit");
+const kelvinEl = document.getElementById("kelvin");
 
 function calculateTemp(event) {
-  const currentValue = +event.target.value
+  const currentValue = +event.target.value;
 
   switch (event.target.name) {
     case "celsius":

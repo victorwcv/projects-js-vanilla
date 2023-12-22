@@ -3,16 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jokes Generator</title>
+    <title>BMI Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="translator" class="translator"></div>
     <div class="container">
-      <h1 class="heading">Joke Generator</h1>
-      <p class="joke" id="joke">Joke</p>
-      <button class="btn" id="btn">Tell me a joke</button>
+      <h1 class="heading">Body Mass Index (BMI) Calculator</h1>
+      <label>Your Height (cm):</label>
+      <input
+        type="number"
+        class="input"
+        id="height"
+        placeholder="Enter your height in cm"
+      />
+      <label>Your Weight (kg):</label>
+      <input
+        type="number"
+        class="input"
+        id="weight"
+        placeholder="Enter your weight in kg"
+      />
+      <button class="btn" id="btn">Calculate BMI</button>
+      <input disabled type="text" class="input" id="bmi-result" />
+      <h4 class="info-text">
+        Weight Condition: <span id="weight-condition"></span>
+      </h4>
     </div>
+    <footer class="footer">
+      <p>&copy; 2023-2024 Victor Ccanchi Vasquez</p>
+    </footer>
     <script src="script.js"></script>
     <script type="text/javascript">
       function googleTranslateElementInit() {

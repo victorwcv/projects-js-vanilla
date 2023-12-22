@@ -16,27 +16,26 @@ async function fetchAPI(word) {
       meaningContainerEl.style.display = "block";
       infoTextEl.style.display = "none";
       titleEl.innerText = word;
-      meaningEl.innerText = 'N/A';
-      audioEl.style.display = 'none'
+      meaningEl.innerText = "N/A";
+      audioEl.style.display = "none";
     } else {
       if (result[0].phonetics[0].audio) {
         audioEl.src = result[0].phonetics[0].audio;
-        audioEl.style.display = 'inline-flex'
+        audioEl.style.display = "inline-flex";
       } else {
-        audioEl.style.display = 'none'
+        audioEl.style.display = "none";
       }
       infoTextEl.style.display = "none";
       meaningContainerEl.style.display = "block";
-      // audioEl.style.display = 'inline-flex'
+      
       titleEl.innerText = result[0].word;
       meaningEl.innerText = result[0].meanings[0].definitions[0].definition;
-      // audioEl.src = result[0].phonetics[0].audio;
+      
       console.log(result);
     }
   } catch (error) {
     console.log(error);
     infoTextEl.innerText = `An error  happened try again later`;
-
   }
 }
 
