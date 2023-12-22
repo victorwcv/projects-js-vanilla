@@ -1,0 +1,91 @@
+:root {
+  --first-color: rgb(168, 5, 50);
+  --second-color: rgb(30, 35, 38);
+  --third-color: rgb(42, 49, 53);
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, var(--second-color), var(--third-color));
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.info-text {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 40px;
+  justify-content: center;
+  padding: 50px;
+  flex: 1;
+}
+
+.note {
+  padding: 17px;
+  resize: none;
+  box-shadow: 0 0 3px var(--first-color);
+  height: 250px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: rgba(255, 255, 255, .1);
+  box-sizing: border-box;
+}
+
+.note::placeholder {
+  color: gray;
+  opacity: 30%;
+}
+
+.note:hover,
+.note:focus {
+  box-shadow: 0 0 10px var(--first-color);
+  transition: all .3s ease;
+}
+
+.btn {
+  height: 250px;
+  border-color: rgba(255, 255, 255, .37);
+  background-color: rgba(168, 5, 50, .27);
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .1);
+  transition: all .4s ease;
+}
+
+.btn:hover {
+  background: rgba(168, 5, 50, .45);
+  color: rgba(255, 255, 255, .95);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.footer {
+  margin-top: auto;
+  background-color: var(--first-color);
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  margin: none;
+}
